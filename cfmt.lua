@@ -4,7 +4,7 @@ local shell = import("micro/shell")
 
 function init()
 	config.MakeCommand("cfmt",cfmt,config.NoComplete)
-	config.TryBindKey("Ctrl-f","command:cfmt",true)
+	config.TryBindKey("Alt-z","command:cfmt",true)
 end
 
 function onSave(bp)
